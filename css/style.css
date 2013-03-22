@@ -1,6 +1,6 @@
 #wrapper {
 	position: relative;
-	width: 940px;
+	width: 960px;
 	margin: 0 auto;
 	
 	background-color: #ff8877;
@@ -12,67 +12,54 @@ header {
 	margin: 40px 0;
 }
 
-
-.item-desc {
+.item {
 	position: relative;
 	float: left;
-	width: 130px;
-	height: 130px;
+	width: 200px;
+	height: 200px;
 	background-image: url("http://placehold.it/200x200");
-	margin-right: 40px;
-	padding: 35px;
-	z-index: 10;
-	margin-bottom: 30px;
+	margin-right: 35px;
 	
 	border-radius: 20px;
-	-moz-border-radius: 20px;
-	-webkit-border-radius: 20px;
-	
 }
 
-div.item-desc p {
-	position: relative;
-	display: none;
-}
-
-.item:hover>div.item-desc p {
-	position: relative;
-	display: inline-block;
-}
-
- .item:last-of-type {
+div.item:last-of-type {
 	margin-right: 0;
 }
 
- .item:first-of-type {
-	margin-left: 10px;
+.item-desc {
+	position: relative;
+	margin: 0 auto;
+	width: 130px;
+	padding: 35px;
+	transition: all 0.5s ease-in-out;
+	
 }
 
  .item-name {
-	position: absolute;
+	position: relative;
 	width: 180px;
-	height: 105px;
 	padding: 5px 10px;
-	bottom: 15px;
-		
-	border-radius: 20px;
-	-moz-border-radius: 20px;
-	-webkit-border-radius: 20px;
+	text-align: center;
+	margin-top: -80px;
+	transition: all 0.5s ease-in-out;
 	
 	background-color: lightblue;
 }
 
- .item-name p:first-of-type {
-	position: absolute;
-	bottom: 0px;
-	width: 150px;
+div.item-desc p {
+	opacity: 0;
+	transition: all 0.5s ease-in-out;
+
 }
 
- .item-name p:last-of-type {
-	position: absolute;
-	bottom: 0px;
-	right: 0px;
-	width: 50px;
-	padding-right: 10px;
-	text-align: right;
+div.item:hover > div p {
+	opacity: 1;
+	transition: all 0.5s ease-in-out;
+}
+
+div.item:hover > .item-name {
+	margin-top: -10px;
+	transition: all 0.5s ease-in-out;
+	
 }
