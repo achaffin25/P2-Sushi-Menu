@@ -1,0 +1,83 @@
+#wrapper {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+	
+	background-color: red;
+}
+
+header {
+	position: relative;
+	text-align: center;
+	margin: 40px 0;
+}
+
+
+div.menu div.span12 .item-desc {
+	position: relative;
+	float: left;
+	width: 130px;
+	height: 130px;
+	background-image: url("http://placehold.it/200x200");
+	margin-right: 40px;
+	padding: 35px;
+	
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	
+}
+
+div.item-desc p {
+	position: relative;
+	display: none;
+}
+
+.item:hover>div.item-desc p {
+	position: relative;
+	display: inline-block;
+}
+
+div.menu div.span12 .item:last-of-type {
+	margin-right: 0;
+}
+
+div.menu div.span12 .item:first-of-type {
+	margin-left: 10px;
+}
+
+div.menu div.span12 .item-name {
+	position: absolute;
+	width: 180px;
+	height: 105px;
+	padding: 5px 10px;
+	bottom: -55px;
+	z-index: -10;
+	
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	
+	background-color: lightblue;
+}
+
+div.menu div.span12 .item-name p:first-of-type {
+	position: absolute;
+	bottom: 0px;
+	width: 150px;
+}
+
+div.menu div.span12 .item-name p:last-of-type {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	width: 50px;
+	padding-right: 10px;
+	text-align: right;
+}
+
+div.span12 {
+	position: relative;
+	background-color: green;
+	z-index: 5;
+}
