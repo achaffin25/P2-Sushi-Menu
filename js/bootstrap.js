@@ -308,7 +308,7 @@
     }
 
   , getActiveIndex: function () {
-      this.$active = this.$element.find('.item.active')
+      this.$active = this.$element.find('.c-item.active')
       this.$items = this.$active.parent().children()
       return this.$items.index(this.$active)
     }
@@ -354,7 +354,7 @@
     }
 
   , slide: function (type, next) {
-      var $active = this.$element.find('.item.active')
+      var $active = this.$element.find('.c-item.active')
         , $next = next || $active[type]()
         , isCycling = this.interval
         , direction = type == 'next' ? 'left' : 'right'
@@ -366,7 +366,7 @@
 
       isCycling && this.pause()
 
-      $next = $next.length ? $next : this.$element.find('.item')[fallback]()
+      $next = $next.length ? $next : this.$element.find('.c-item')[fallback]()
 
       e = $.Event('slide', {
         relatedTarget: $next[0]
